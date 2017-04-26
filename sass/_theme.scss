@@ -1,0 +1,40 @@
+/* ADD/REMOVE/CHANGE THEMES HERE */
+
+// Giving the default theme a name
+@include theme-maker("default", ());
+@include theme-maker("green", ());
+
+@include theme-maker("grey", (
+  theme (
+        bg #85ce26,
+        color #ffffff,
+  ),
+  header (
+        bg #85ce26,
+        logout (
+          bg #818181,
+          hover-bg #919191
+        ),
+  ),
+  sidebar (
+        bg #ffffff,
+        color #85ce26,
+        active-bg #eeeeee,
+        avatar (
+          bg #818181,
+          color #83ca22
+        ),
+        controls (
+          bg #ffffff,
+          btn (
+              color #85ce26,
+              border darken(#279982, 2%),
+              active-color #ffffff
+          )
+        )
+  ),
+  footer (
+        bg #85ce26,
+        color #ffffff
+  )
+));
